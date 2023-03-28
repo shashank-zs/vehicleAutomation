@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Unit" verbose="1">
+    <test name="Assignment BookCart">
+        <classes>
+            <class name="BookCartPS1.ProblemStatement1"></class>
+            <class name="BookCartPS1.PostBookCart"></class>
+            <class name="BookCartPS1.GetBookCart"></class>
+            <class name="BookCartPS1.DeleteBookCart"></class>
+
+        </classes>
+    </test>
+</suite>

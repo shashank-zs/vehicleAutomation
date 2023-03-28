@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2afb675d-a5bb-4216-9aa6-ecd7dbbb71e5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/gradle.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gradle.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/HelperVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/HelperVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConvertForVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConvertForVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetAllVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetAllVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetVehicleWithId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetVehicleWithId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PostVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PostVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PutVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PutVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/vehicle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/vehicle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,11 +181,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PostVehicle" />
+        <item itemvalue="Gradle.vehicleAutomation [test]" />
         <item itemvalue="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" />
         <item itemvalue="Gradle.GetAllVehicle.PostVehiclePositiveTestCases" />
         <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
-        <item itemvalue="Gradle.vehicleAutomation [test]" />
-        <item itemvalue="Gradle.PostVehicle" />
       </list>
     </recent_temporary>
   </component>

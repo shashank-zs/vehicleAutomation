@@ -35,7 +35,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    systemProperty 'suite',systemProperties['suite']
     useTestNG(){
-        suites ('./src/test/resources/vehicle.xml')
+        suites ('./src/test/resources/' + System.properties['suite'] )
     }
 }

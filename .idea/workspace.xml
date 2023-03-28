@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2afb675d-a5bb-4216-9aa6-ecd7dbbb71e5" name="Changes" comment="" />
+    <list default="true" id="2afb675d-a5bb-4216-9aa6-ecd7dbbb71e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/HelperVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/HelperVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConvertForVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConvertForVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/ExcelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetAllVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetAllVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetVehicleWithId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetVehicleWithId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PostVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PostVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PutVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PutVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/vehicle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/vehicle.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +31,28 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NXw7wbBXVmUomD3pujybTClrM8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,12 +60,147 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/excelFiles&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/excelFiles" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/excelFiles" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml">
+    <configuration name="GetAllVehicle.PostVehiclePositiveTestCases" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;VehicleAutomation.GetAllVehicle.PostVehiclePositiveTestCases&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostVehicle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;VehicleAutomation.PostVehicle&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostVehicle.PostVehiclePositiveTestCases" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;VehicleAutomation.PostVehicle.PostVehiclePositiveTestCases&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="vehicleAutomation [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="/Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="vehicleAutomation.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/vehicle.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.GetAllVehicle.PostVehiclePositiveTestCases" />
+      <item itemvalue="Gradle.PostVehicle" />
+      <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
+      <item itemvalue="Gradle.vehicleAutomation [test]" />
+      <item itemvalue="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" />
+        <item itemvalue="Gradle.GetAllVehicle.PostVehiclePositiveTestCases" />
+        <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
+        <item itemvalue="Gradle.vehicleAutomation [test]" />
+        <item itemvalue="Gradle.PostVehicle" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,5 +211,8 @@
       <updated>1679823574069</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/vehicleAutomation$_Users_raramuri_IdeaProjects_vehicleAutomation_src_test_resources_vehicle_xml.ic" NAME="$PROJECT_DIR$/src/test/resources/vehicle.xml Coverage Results" MODIFIED="1679901027840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -1,11 +1,14 @@
-package com.utils;
+package org.example.utils;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import junit.framework.Assert;
 
+import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class Generic {
 
@@ -13,6 +16,7 @@ public class Generic {
         Response response= RestAssured.given()
                 .when()
                 .post((String) URL);
+
         Assert.assertEquals(expectedStatus,response.getStatusCode());
         response.then().log().all();
         return response;
@@ -28,19 +32,59 @@ public class Generic {
         response.then().log().all();
         return response;
     }
-    public static Response getApiCall(Map headersList,String url,Object expectedStatus){
+    public static Response postPutApiCall(Map headersList,String url,Object payload,Object expectedStatus){
         Response response= RestAssured.given()
                 .headers(headersList)
+                .headers("Content-Type","application/json")
+                .body((String) payload)
+                .when()
+                .post(url);
+        response.then().log().all();
+        return response;
+    }
+    public static Response getApiCall(Map headersList,String url,String key,Object value,Object expectedStatus){
+        Response response= RestAssured.given()
+                .headers(headersList)
+                .queryParam(key,value)
                 .when()
                 .get( url);
         Assert.assertEquals(expectedStatus,response.getStatusCode());
         response.then().log().all();
         return response;
     }
-    public static Response getApiCall(Object URL,Object expectedStatus){
+    //create random AlphaNumeric String
+    public static String generateRandomString() {
+        String ALPHANUMERIC_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        int STRING_LENGTH = 10;
+        StringBuilder sb = new StringBuilder(STRING_LENGTH);
+        Random random = new Random();
+        for (int i = 0; i < STRING_LENGTH; i++) {
+            sb.append(ALPHANUMERIC_CHARS.charAt(random.nextInt(ALPHANUMERIC_CHARS.length())));
+        }
+        return sb.toString();
+    }
+    //cerate random only string
+    public static String generateRandomOnlyString() {
+        String ALPHANUMERIC_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        int STRING_LENGTH = 10;
+        StringBuilder sb = new StringBuilder(STRING_LENGTH);
+        Random random = new Random();
+        for (int i = 0; i < STRING_LENGTH; i++) {
+            sb.append(ALPHANUMERIC_CHARS.charAt(random.nextInt(ALPHANUMERIC_CHARS.length())));
+        }
+        return sb.toString();
+    }
+    //assertion for error messages
+    public static void assertionErrorMessage(Response response, Object errorMessages) {
+        JsonPath jsonPath = response.jsonPath();
+        Assert.assertEquals(jsonPath.get("message"), errorMessages);
+
+    }
+
+    public static Response getApiCall(String URL,Object expectedStatus){
         Response response= RestAssured.given()
                 .when()
-                .get((String) URL);
+                .get( URL);
         Assert.assertEquals(expectedStatus,response.getStatusCode());
         response.then().log().all();
         return response;
@@ -75,7 +119,7 @@ public class Generic {
     }
     public static Map tokenMap(){
         Map<String, String> token = new HashMap();
-        token.put("Authorization","Bearer " + DataPath.TOKEN_FOR_USER);
+        token.put("Authorization","Bearer " + DataPath.TOKEN_FOR_ZOPPING);
         return token;
     }
 

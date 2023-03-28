@@ -1,12 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Unit" verbose="1">
-    <test name="Assignment BookCart">
+    <test name="Assignment Vehicle">
         <classes>
-            <class name="BookCartPS1.ProblemStatement1"></class>
-            <class name="BookCartPS1.PostBookCart"></class>
-            <class name="BookCartPS1.GetBookCart"></class>
-            <class name="BookCartPS1.DeleteBookCart"></class>
+            <class name="VehicleAutomation.PostVehicle"></class>
+            <class name="VehicleAutomation.GetVehicleWithId"></class>
+            <class name="VehicleAutomation.GetAllVehicle"></class>
+            <class name="VehicleAutomation.PutVehicle"></class>
+
 
         </classes>
     </test>

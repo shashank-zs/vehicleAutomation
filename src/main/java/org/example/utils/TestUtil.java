@@ -1,17 +1,10 @@
-package com.qa.api.zopping.utils;
+package org.example.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- * @author shikha rani
- */
 public class TestUtil {
-    /**
-     * This is a method for serialization of POJO Object
-     * @param object
-     * @return String
-     */
+
     public static String getSerialization(Object object){
         ObjectMapper objectMapper=new ObjectMapper();
         String jsonString=null;

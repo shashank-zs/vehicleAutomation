@@ -10,10 +10,32 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'io.rest-assured:rest-assured-common:5.3.0'
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    runtimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.7.1'
+    // https://mvnrepository.com/artifact/org.apache.poi/poi
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.2.3'
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.1.1'
+
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.3'
+    // https://mvnrepository.com/artifact/junit/junit
+    implementation group: 'junit', name: 'junit', version: '4.13.2'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-scala
+    implementation group: 'com.fasterxml.jackson.module', name: 'jackson-module-scala_3', version: '2.14.2'
+    // https://mvnrepository.com/artifact/org.json/json
+    implementation group: 'org.json', name: 'json', version: '20230227'
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+
 }
 
 test {
     useJUnitPlatform()
+    useTestNG(){
+        suites ('./src/test/resources/testng.xml')
+    }
 }

@@ -54,16 +54,18 @@ public class Generic {
     }
     //create random AlphaNumeric String
     public static String generateRandomString() {
-        String ALPHANUMERIC_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        int STRING_LENGTH = 10;
+        String ALPHABET_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String IntRandom="0123456789";
+        int STRING_LENGTH = 5;
         StringBuilder sb = new StringBuilder(STRING_LENGTH);
         Random random = new Random();
         for (int i = 0; i < STRING_LENGTH; i++) {
-            sb.append(ALPHANUMERIC_CHARS.charAt(random.nextInt(ALPHANUMERIC_CHARS.length())));
+            sb.append(ALPHABET_CHARS.charAt(random.nextInt(ALPHABET_CHARS.length())));
+            sb.append(IntRandom.charAt(random.nextInt(IntRandom.length())));
         }
         return sb.toString();
     }
-    //cerate random only string
+    //create random only string
     public static String generateRandomOnlyString() {
         String ALPHANUMERIC_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         int STRING_LENGTH = 10;

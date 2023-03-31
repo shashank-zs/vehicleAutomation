@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2afb675d-a5bb-4216-9aa6-ecd7dbbb71e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/Homepage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/LogIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/WebDriverUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumAssignment/AssignmentWeek3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Assignment3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/HelperVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConvertForVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/TestUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetAllVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetVehicleWithId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PostVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PutVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/excelFiles/VehicleAutomation.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/vehicle.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +54,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,16 +70,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/excelFiles",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/excelFiles&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/excelFiles" />
@@ -66,11 +91,12 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.pages.MagnetoAssignment3" />
       <recent name="org.example.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml">
-    <configuration name="GetAllVehicle.PostVehiclePositiveTestCases" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="TestNG.assignmentWeek3">
+    <configuration name="AssignmentWeek3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -83,7 +109,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;VehicleAutomation.GetAllVehicle.PostVehiclePositiveTestCases&quot;" />
+            <option value="&quot;SeleniumAssignment.AssignmentWeek3&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -93,7 +119,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PostVehicle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AssignmentWeek3.main" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +132,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;VehicleAutomation.PostVehicle&quot;" />
+            <option value="&quot;SeleniumAssignment.AssignmentWeek3.main&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -170,19 +196,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="assignmentWeek3" type="TestNG">
+      <shortenClasspath name="NONE" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Assignment3.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Gradle.GetAllVehicle.PostVehiclePositiveTestCases" />
-      <item itemvalue="Gradle.PostVehicle" />
+      <item itemvalue="Gradle.AssignmentWeek3" />
+      <item itemvalue="Gradle.AssignmentWeek3.main" />
       <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
       <item itemvalue="Gradle.vehicleAutomation [test]" />
+      <item itemvalue="TestNG.assignmentWeek3" />
       <item itemvalue="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AssignmentWeek3" />
+        <item itemvalue="Gradle.AssignmentWeek3.main" />
         <item itemvalue="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" />
-        <item itemvalue="Gradle.PostVehicle" />
         <item itemvalue="Gradle.vehicleAutomation [test]" />
-        <item itemvalue="Gradle.GetAllVehicle.PostVehiclePositiveTestCases" />
         <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
       </list>
     </recent_temporary>

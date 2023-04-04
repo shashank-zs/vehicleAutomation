@@ -30,7 +30,7 @@ jobs:
       with:
         arguments: build
 
-  Assignment 3:
+  Assignment3:
 
     runs-on: ubuntu-latest
     needs: build

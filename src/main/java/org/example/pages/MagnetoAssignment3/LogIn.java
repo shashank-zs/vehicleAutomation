@@ -1,13 +1,13 @@
 package org.example.pages.MagnetoAssignment3;
 
+import org.example.helper.MagnetoAssertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static org.example.utils.DataPath.EMAIL;
-import static org.example.utils.DataPath.PASSWORD;
+import static org.example.utils.Generic.generateRandomEmail;
 
 
 public class LogIn {
@@ -28,7 +28,7 @@ public class LogIn {
     @FindBy (css ="button[class=\"action submit primary\"]" )
     public WebElement Submit;
 
-    @FindBy (css ="button[data-action=\"customer-menu-toggle\"]" )
+    @FindBy (css ="button[class=\"action switch\"]" )
     public WebElement logMenu;
     @FindBy (css =" a[href=\"https://magento.softwaretestingboard.com/customer/account/logout/\"]" )
     public WebElement logOut;
@@ -45,18 +45,22 @@ public class LogIn {
     public WebElement clickLogIn ;
 
 
-    public void loginPage(){
-        firstname.sendKeys("shashank");
-        lastname.sendKeys("sdsdsd");
-        email_address.sendKeys("sdhffsjjdhs@gmasidf.com");
-        password.sendKeys("sfsdfsfd@1");
-        passwordConfirmation.sendKeys("sfsdfsfd@1");
+    public void loginPage(String firstnam,String lastnam ,String pass)  {
+        MagnetoAssertions assertion = new MagnetoAssertions(driver);
+        String email =generateRandomEmail();
+        firstname.sendKeys(firstnam);
+        lastname.sendKeys(lastnam);
+        email_address.sendKeys(email);
+        password.sendKeys(pass);
+        passwordConfirmation.sendKeys(pass);
         Submit.click();
+        logMenu.isDisplayed();
         logMenu.click();
         logOut.click();
         SignIn.click();
-        inputEmail.sendKeys(EMAIL);
-        inputPassword.sendKeys(PASSWORD);
+        assertion.assertionLogin();
+        inputEmail.sendKeys(email);
+        inputPassword.sendKeys(pass);
         clickLogIn.click();
 
     }

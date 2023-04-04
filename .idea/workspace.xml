@@ -5,26 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2afb675d-a5bb-4216-9aa6-ecd7dbbb71e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/Homepage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/LogIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/WebDriverUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumAssignment/AssignmentWeek3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Assignment3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/MagnetoAssertions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/AddProductpage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/CheckoutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/excelFiles/Assignment3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/HelperVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConvertForVehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/Homepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/TestUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetAllVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetVehicleWithId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PostVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PutVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/excelFiles/VehicleAutomation.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/vehicle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SeleniumAssignment/AssignmentWeek3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumAssignment/AssignmentWeek3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,29 +87,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.assignmentWeek3">
-    <configuration name="AssignmentWeek3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;SeleniumAssignment.AssignmentWeek3&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="AssignmentWeek3.main" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -133,6 +101,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;SeleniumAssignment.AssignmentWeek3.main&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PS2.problemStatement2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;SeleniumAssignment.PS2.problemStatement2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -198,6 +189,7 @@
     </configuration>
     <configuration name="assignmentWeek3" type="TestNG">
       <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Assignment3.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -205,16 +197,18 @@
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
       <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/src/test/resources" />
       <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter2" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.AssignmentWeek3" />
+      <item itemvalue="Gradle.PS2.problemStatement2" />
       <item itemvalue="Gradle.AssignmentWeek3.main" />
       <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
       <item itemvalue="Gradle.vehicleAutomation [test]" />
@@ -223,11 +217,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AssignmentWeek3" />
-        <item itemvalue="Gradle.AssignmentWeek3.main" />
+        <item itemvalue="Gradle.PS2.problemStatement2" />
         <item itemvalue="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" />
         <item itemvalue="Gradle.vehicleAutomation [test]" />
         <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
+        <item itemvalue="Gradle.AssignmentWeek3.main" />
       </list>
     </recent_temporary>
   </component>

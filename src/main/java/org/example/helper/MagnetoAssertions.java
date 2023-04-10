@@ -52,18 +52,19 @@ public class MagnetoAssertions {
     public WebElement SignInPass;
     @FindBy (css ="div[data-bind=\"i18n: 'Shipping Address'\"]" )
     public WebElement shipping;
-    @FindBy (xpath ="(//div[@class=\"field-error\"]/span)[3]" )
-    public WebElement street;
-    @FindBy (xpath ="(//div[@class=\"field-error\"]/span)[3]" )
-    public WebElement city;
-    @FindBy (xpath ="(//div[@class=\"field-error\"]/span)[3]" )
-    public WebElement postCode;
-    @FindBy (xpath ="(//div[@class=\"field-error\"]/span)[3]" )
-    public WebElement phone;
-    @FindBy(css = "span[data-bind=\"i18n: 'Next'\"]")
-    public WebElement next;
-    @FindBy(css = "input[name=\"ko_unique_2\"]")
-    public WebElement method;
+    @FindBy(css = "div[class=\"title\"]>strong")
+    public WebElement itemInCart;
+    @FindBy (css ="span[data-th=\"Cart Subtotal\"]" )
+    public WebElement cartTotal;
+
+    @FindBy(xpath = "(//span[@class=\"cart-price\"]/span)[1]")
+    public WebElement item1Price;
+    @FindBy(xpath = "(//span[@class=\"cart-price\"]/span)[2]")
+    public WebElement item2Price;
+    @FindBy(xpath = "(//span[@class=\"cart-price\"]/span)[3]")
+    public WebElement item3Price;
+    @FindBy(xpath = "(//span[@class=\"cart-price\"]/span)[4]")
+    public WebElement item4Price;
 
 
     public  void assertionHomepage(){
@@ -99,6 +100,22 @@ public class MagnetoAssertions {
     public void assertionCheckout() {
         Assert.assertEquals(driver.getTitle(), "Checkout");
         Assert.assertEquals(shipping.getText(),"Shipping Address");
+
+    }
+    public void paymentPageAssertion(){
+        itemInCart.click();
+        String item1=item1Price.getText().replaceAll("[^\\d]", "");
+        int price1 = Integer.parseInt(item1);
+        String item2=item2Price.getText().replaceAll("[^\\d]", "");
+        int price2 = Integer.parseInt(item2);
+        String item3=item3Price.getText().replaceAll("[^\\d]", "");
+        int price3 = Integer.parseInt(item3);
+        String item4=item4Price.getText().replaceAll("[^\\d]", "");
+        int price4 = Integer.parseInt(item4);
+        String item5=cartTotal.getText().replaceAll("[^\\d]", "");
+        int totalprice = Integer.parseInt(item5);
+        int expectedTotal= price1+price2+price3+price4;
+        Assert.assertEquals(totalprice,expectedTotal);
     }
 
 }

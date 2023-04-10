@@ -46,6 +46,8 @@ public class LogIn {
 
 
     public void loginPage(String firstnam,String lastnam ,String pass)  {
+
+
         MagnetoAssertions assertion = new MagnetoAssertions(driver);
         String email =generateRandomEmail();
         firstname.sendKeys(firstnam);
@@ -54,9 +56,11 @@ public class LogIn {
         password.sendKeys(pass);
         passwordConfirmation.sendKeys(pass);
         Submit.click();
+
         logMenu.isDisplayed();
         logMenu.click();
         logOut.click();
+
         SignIn.click();
         assertion.assertionLogin();
         inputEmail.sendKeys(email);

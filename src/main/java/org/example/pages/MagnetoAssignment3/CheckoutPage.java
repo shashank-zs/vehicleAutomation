@@ -64,6 +64,7 @@ public class CheckoutPage {
         wait.until(ExpectedConditions.invisibilityOf( shipType));
         next.click();
         wait.until(ExpectedConditions.textToBePresentInElement(shipDetails, "shashank"));
+        assertion.paymentPageAssertion();
         placeOrder.click();
 
     }

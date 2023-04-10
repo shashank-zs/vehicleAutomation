@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2afb675d-a5bb-4216-9aa6-ecd7dbbb71e5" name="Changes" comment="" />
+    <list default="true" id="2afb675d-a5bb-4216-9aa6-ecd7dbbb71e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/MagnetoAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/MagnetoAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/AddProductpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/AddProductpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/MagnetoAssignment3/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Assignment3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Assignment3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/emailable-report.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,30 +83,7 @@
       <recent name="org.example.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.assignmentWeek3">
-    <configuration name="AssignmentWeek3.main" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;SeleniumAssignment.AssignmentWeek3.main&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.PROGRAM.main">
     <configuration name="PS2.problemStatement2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -165,6 +151,24 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PROGRAM.main" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="vehicleAutomation.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.pages.MagnetoAssignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.pages.MagnetoAssignment3" />
+      <option name="MAIN_CLASS_NAME" value="org.example.pages.MagnetoAssignment3.PROGRAM" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="/Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="vehicleAutomation.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/vehicle.xml" />
@@ -197,19 +201,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.PS2.problemStatement2" />
-      <item itemvalue="Gradle.AssignmentWeek3.main" />
       <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
       <item itemvalue="Gradle.vehicleAutomation [test]" />
       <item itemvalue="TestNG.assignmentWeek3" />
+      <item itemvalue="TestNG.PROGRAM.main" />
       <item itemvalue="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PROGRAM.main" />
         <item itemvalue="Gradle.PS2.problemStatement2" />
         <item itemvalue="TestNG./Users/raramuri/IdeaProjects/vehicleAutomation/src/test/resources/vehicle.xml" />
         <item itemvalue="Gradle.vehicleAutomation [test]" />
         <item itemvalue="Gradle.PostVehicle.PostVehiclePositiveTestCases" />
-        <item itemvalue="Gradle.AssignmentWeek3.main" />
       </list>
     </recent_temporary>
   </component>

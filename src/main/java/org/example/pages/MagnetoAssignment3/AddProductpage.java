@@ -61,28 +61,26 @@ public class AddProductpage {
     public WebElement goToCart ;
     @FindBy (css ="button[id=\"top-cart-btn-checkout\"]" )
     public WebElement clickCheckout ;
+    public void addCart(WebElement product,WebElement WishList,WebElement addCart,WebElement Shopping,String msg){
+        Actions action = new Actions(driver);
+        action.moveToElement(product).perform();
+        WishList.isDisplayed();
+        action.moveToElement(addCart).perform();
+        addCart.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25000));
+        wait.until(ExpectedConditions.textToBePresentInElement(Shopping, msg));
+
+    }
 
 
     public void addProducts()  {
         Actions action = new Actions(driver);
-        action.moveToElement(bag1).perform();
-        wishlist1.isDisplayed();
-        action.moveToElement(addCart1).perform();
-        addCart1.click();
+
+        addCart(bag1,wishlist1,addCart1,shoppingCart,"You added Overnight Duffle to your shopping cart.");
+        addCart(bag2,wishlist2,addCart2,shoppingCart,"You added Voyage Yoga Bag to your shopping cart.");
+        addCart(bag3,wishlist3,addCart3,shoppingCart,"You added Wayfarer Messenger Bag to your shopping cart.");
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25000));
-        wait.until(ExpectedConditions.textToBePresentInElement(shoppingCart, "You added Overnight Duffle to your shopping cart."));
-
-        action.moveToElement(bag2).perform();
-        wishlist2.isDisplayed();
-        action.moveToElement(addCart2).perform();
-        addCart2.click();
-        wait.until(ExpectedConditions.textToBePresentInElement(shoppingCart, "You added Voyage Yoga Bag to your shopping cart."));
-
-        action.moveToElement(bag3).perform();
-        wishlist3.isDisplayed();
-        action.moveToElement(addCart3).perform();
-        addCart3.click();
-        wait.until(ExpectedConditions.textToBePresentInElement(shoppingCart, "You added Wayfarer Messenger Bag to your shopping cart."));
 
         listView.click();
         action.moveToElement(men).perform();

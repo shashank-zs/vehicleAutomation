@@ -3,7 +3,7 @@
 <suite name="Unit" verbose="1">
     <test name="Rest Assured Assignment">
         <classes>
-            <class name="SeleniumAssignment.AssignmentWeek3"></class>
+            <class name="SeleniumAssignment."></class>
         </classes>
     </test>
 </suite>

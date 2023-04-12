@@ -8,38 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2afb675d-a5bb-4216-9aa6-ecd7dbbb71e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/extentReportListener/ExtentReportListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoPostProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConvertForPostAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConverterPostProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/DeleteProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/GetAllCategories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/GetAllProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/GetProductsOfCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/GetSingleProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/LimitAndSkipProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/PostAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/PostProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/SearchProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Assignment4/UpdateProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/excelFiles/Assignment4.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/helper/HelperVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/helper/HelperAssignment4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonFromPojoVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/JsonToPojoConvertForVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/DataPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/Generic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetAllVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/GetVehicleWithId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PostVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VehicleAutomation/PutVehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/excelFiles/VehicleAutomation.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/vehicle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Assignment4.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +38,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">

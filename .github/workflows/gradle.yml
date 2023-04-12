@@ -46,7 +46,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: testing vehicle api
+      - name: testing assignment 4
         run: ./gradlew clean test -Dsuite=Assignment4.xml
 
 

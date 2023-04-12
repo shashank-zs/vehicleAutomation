@@ -11,13 +11,18 @@ repositories {
 
 dependencies {
     implementation 'io.rest-assured:rest-assured-common:5.3.0'
-    implementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    runtimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    testImplementation group: 'org.testng', name: 'testng', version: '7.7.1'
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    implementation 'tech.grasshopper:extentreports-cucumberjson-plugin:2.15.0'
+    implementation 'org.xmlunit:xmlunit-jakarta-jaxb-impl:2.9.0'
+    implementation 'com.relevantcodes:extentreports:2.41.2'
+    implementation 'com.dhemery.runtime-suite:runtime-suite:0.5'
+    implementation 'org.xmlunit:xmlunit-parent:2.9.0'
+    runtimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    implementation group: 'org.testng', name: 'testng', version: '7.7.1'
     // https://mvnrepository.com/artifact/org.apache.poi/poi
     implementation group: 'org.apache.poi', name: 'poi', version: '5.2.3'
     // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
-    implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.1.1'
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.3.0'
 
     // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
     implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.3'
@@ -29,6 +34,9 @@ dependencies {
     implementation group: 'org.json', name: 'json', version: '20230227'
     // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
     implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    // https://mvnrepository.com/artifact/com.aventstack/extentreports
+    implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
+
 
 
 }

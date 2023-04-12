@@ -47,7 +47,7 @@ jobs:
           distribution: 'temurin'
 
       - name: testing vehicle api
-        run: ./gradlew clean test -Dsuite=vehicle.xml
+        run: ./gradlew clean test -Dsuite=Assignment4.xml
 
 
 

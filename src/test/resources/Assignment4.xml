@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Unit" verbose="1">
+    <listeners>
+        <listener class-name ="org.example.extentReportListener.ExtentReportListener" />
+    </listeners>
+    <test name="Assignment Vehicle">
+        <classes>
+            <class name="Assignment4.DeleteProduct"></class>
+            <class name="Assignment4.GetAllCategories"></class>
+            <class name="Assignment4.GetAllProducts"></class>
+            <class name="Assignment4.GetProductsOfCategory"></class>
+            <class name="Assignment4.GetSingleProduct"></class>
+            <class name="Assignment4.LimitAndSkipProducts"></class>
+            <class name="Assignment4.PostAuth"></class>
+            <class name="Assignment4.PostProduct"></class>
+            <class name="Assignment4.SearchProduct"></class>
+            <class name="Assignment4.UpdateProduct"></class>
+
+
+
+        </classes>
+    </test>
+</suite>

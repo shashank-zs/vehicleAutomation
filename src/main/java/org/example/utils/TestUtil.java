@@ -4,7 +4,11 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class TestUtil {
-
+    /**
+     * takes all json object and create a json string
+     * @param object
+     * @return
+     */
     public static String getSerialization(Object object){
         ObjectMapper objectMapper=new ObjectMapper();
         String jsonString=null;

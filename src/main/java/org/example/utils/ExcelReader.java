@@ -11,6 +11,13 @@ import java.io.IOException;
 import java.util.Iterator;
 
 public class ExcelReader {
+    /**
+     * method to fetch data from excel sheet requires-
+     * @param excelPath
+     * @param sheetName
+     * @return
+     * @throws IOException
+     */
     public static  Object[][] getData(String excelPath,String sheetName) throws IOException {
         try{
             int rowIndex=0, colIndex=0;

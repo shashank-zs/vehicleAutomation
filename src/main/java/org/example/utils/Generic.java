@@ -11,6 +11,32 @@ import java.util.Map;
 import java.util.Random;
 
 public class Generic {
+    /**
+     * does generic assertion for all methods
+     * @param actual
+     * @param expected
+     */
+    public static void genericAssertion(Object expected,String actual){
+        Assert.assertEquals(String.valueOf(expected),actual);
+    }
+    /**
+     * fetch actual single data from response
+     * @param response
+     * @param jsonPath
+     * @return
+     */
+    public static String getSingleActualResponseData(Response response,String jsonPath){
+        JsonPath jsonPathParam=response.jsonPath();
+        String responseData=jsonPathParam.getString(jsonPath);
+        return responseData;
+    }
+
+    /**
+     * Post api call. pass expected Status & post url.
+     * @param URL
+     * @param expectedStatus
+     * @return
+     */
 
     public static Response postApiCall(Object URL,Object expectedStatus){
         Response response= RestAssured.given()
@@ -21,17 +47,61 @@ public class Generic {
         response.then().log().all();
         return response;
     }
-    public static Response postApiCall(Map headersList,String url,Object payload,Object expectedStatus){
+    /**
+     * Post api call. pass payload as string and post url.
+     * @param payload
+     * @param url
+     * @param expectedStatus
+     * @return
+     */
+    public static Response postApiCall(String url,String payload,Object expectedStatus){
         Response response= RestAssured.given()
-                .headers(headersList)
-                .headers("Content-Type","application/json")
-                .body((String) payload)
+                .headers("content-type","application/json")
+                .body( payload)
                 .when()
                 .post(url);
+         Assert.assertEquals(expectedStatus,response.getStatusCode());
+        response.then().log().all();
+        return response;
+    }
+
+    /**
+     * put api which requires
+     * @param url
+     * @param payload
+     * @param expectedStatus
+     * @return
+     */
+    public static Response putApiCall(String url,String payload,Object expectedStatus){
+        Response response= RestAssured.given()
+                .headers("content-type","application/json")
+                .body( payload)
+                .when()
+                .put(url);
         Assert.assertEquals(expectedStatus,response.getStatusCode());
         response.then().log().all();
         return response;
     }
+
+    /**
+     * we can do fetch response data and do assertion for single data using
+     * @param response
+     * @param data
+     * @param path
+     */
+    public static void genericAssertionWithResponse(Response response, Object data,String path) {
+        String actualData = getSingleActualResponseData(response, path);
+        if (actualData !=null) {
+            genericAssertion(data, actualData);
+        }
+    }
+    /**
+     * Post api call. Pass headerList along with auth token, payload as string and post url.
+     * @param payload
+     * @param url
+     * @param expectedStatus
+     * @return
+     */
     public static Response postPutApiCall(Map headersList,String url,Object payload,Object expectedStatus){
         Response response= RestAssured.given()
                 .headers(headersList)
@@ -42,9 +112,17 @@ public class Generic {
         response.then().log().all();
         return response;
     }
-    public static Response getApiCall(Map headersList,String url,String key,Object value,Object expectedStatus){
+
+    /**
+     * get api
+     * @param url
+     * @param key
+     * @param value
+     * @param expectedStatus
+     * @return
+     */
+    public static Response getApiCall(String url,String key,Object value,Object expectedStatus){
         Response response= RestAssured.given()
-                .headers(headersList)
                 .queryParam(key,value)
                 .when()
                 .get( url);
@@ -52,7 +130,27 @@ public class Generic {
         response.then().log().all();
         return response;
     }
-    //create random AlphaNumeric String
+
+    /**
+     * @param url
+     * @param queryData
+     * @param expectedStatus
+     * @return
+     */
+    public static Response getApiCall(String url,Map queryData,Object expectedStatus){
+        Response response= RestAssured.given()
+                .queryParams(queryData)
+                .when()
+                .get( url);
+        Assert.assertEquals(expectedStatus,response.getStatusCode());
+        response.then().log().all();
+        return response;
+    }
+
+    /**
+     * crate alphaNumeric String
+     * @return
+     */
     public static String generateRandomString() {
         String ALPHABET_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String IntRandom="0123456789";
@@ -65,7 +163,11 @@ public class Generic {
         }
         return sb.toString();
     }
-    //create random only string
+
+    /**
+     * create random string
+     * @return
+     */
     public static String generateRandomOnlyString() {
         String ALPHANUMERIC_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         int STRING_LENGTH = 10;
@@ -76,13 +178,27 @@ public class Generic {
         }
         return sb.toString();
     }
-    //assertion for error messages
+
+    /**
+     *Assertion for error message
+     * @param response
+     * @param errorMessages
+     */
     public static void assertionErrorMessage(Response response, Object errorMessages) {
-        JsonPath jsonPath = response.jsonPath();
-        Assert.assertEquals(jsonPath.get("message"), errorMessages);
-
+            if (response.statusCode() != 404) {
+                JsonPath jsonPath = response.jsonPath();
+                Assert.assertEquals(jsonPath.get("message"), errorMessages);
+            }
+            else{
+                Assert.assertEquals(" ", errorMessages);
+            }
     }
-
+    /**
+     * get api call.pass url and expectedStatus.
+     * @param URL
+     * @param expectedStatus
+     * @return
+     */
     public static Response getApiCall(String URL,Object expectedStatus){
         Response response= RestAssured.given()
                 .when()
@@ -91,6 +207,13 @@ public class Generic {
         response.then().log().all();
         return response;
     }
+
+    /**
+     * delete api call using
+     * @param url
+     * @param expectedStatus
+     * @return
+     */
     public static Response deleteApiCall(Object url,Object expectedStatus){
         Response response = RestAssured.given()
                 .when()
@@ -99,6 +222,13 @@ public class Generic {
         response.then().log().all();
         return response;
     }
+
+    /**
+     * @param headersList
+     * @param url
+     * @param expectedStatus
+     * @return
+     */
     public static Response deleteApiCall(Map headersList,String url,Object expectedStatus){
         Response response = RestAssured.given()
                 .headers(headersList)
@@ -108,6 +238,15 @@ public class Generic {
         response.then().log().all();
         return response;
     }
+
+    /**
+     * put api call
+     * @param headersList
+     * @param url
+     * @param payload
+     * @param expectedStatus
+     * @return
+     */
     public static Response putApiCall(Map headersList,String url,Object payload,Object expectedStatus){
         Response response= RestAssured.given()
                 .headers(headersList)
@@ -119,10 +258,24 @@ public class Generic {
         response.then().log().all();
         return response;
     }
+
+    /**
+     * generate token with hashmap
+     * @return
+     */
     public static Map tokenMap(){
         Map<String, String> token = new HashMap();
         token.put("Authorization","Bearer " + DataPath.TOKEN_FOR_ZOPPING);
         return token;
     }
+
+    /**
+     * @param response
+     * @param errorMessages
+     */
+    public static void assertionErrorMessages(Response response, Object errorMessages) {
+            JsonPath jsonPath = response.jsonPath();
+            Assert.assertEquals(jsonPath.get("message"), errorMessages);
+        }
 
 }

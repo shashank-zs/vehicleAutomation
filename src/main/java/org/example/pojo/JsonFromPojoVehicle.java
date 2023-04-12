@@ -5,13 +5,17 @@ import java.util.ArrayList;
 import static org.example.utils.TestUtil.getSerialization;
 
 public class JsonFromPojoVehicle {
-    public static String createJsonVehicle(Object number, Object type, Object vendorId, Object storeId) {
-        JsonToPojoConvertForVehicle pojoVehicle = new JsonToPojoConvertForVehicle();
-        pojoVehicle.setNumber( number);
-        pojoVehicle.setType(type);
-        pojoVehicle.setVendorId( vendorId);
-        pojoVehicle.setStoreId( storeId);
+    /**
+     * create json from pojo for post auth
+     * @param username
+     * @param password
+     * @return
+     */
+    public static String createJsonAuth(Object username, Object password) {
+        JsonToPojoConvertForPostAuth pojoAuth = new JsonToPojoConvertForPostAuth();
+        pojoAuth.setUsername( username);
+        pojoAuth.setPassword(password);
 
-        return getSerialization(pojoVehicle);
+        return getSerialization(pojoAuth);
     }
 }

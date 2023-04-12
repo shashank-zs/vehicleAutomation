@@ -33,7 +33,7 @@ jobs:
       with:
         arguments: build
 
-  VehicleAutomation:
+  Assignment 4:
 
     runs-on: ubuntu-latest
     needs: build
